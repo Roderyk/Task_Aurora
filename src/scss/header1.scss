@@ -1,0 +1,169 @@
+.header1{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid $color-line;
+    
+
+    &-contact {
+        margin-top: 10px;
+        padding: 0 70px; 
+        font-family: $poppins;
+        font-size: $font_s_9;
+        
+        &__tel {
+            position: relative;
+            &:before{
+                content: url(../img/tele.png);
+                position: absolute;
+                top: -5px;
+                right: 0;
+                left: -20px;
+                bottom: 0;
+            }
+        }
+        &__mail {
+            position: relative;
+            margin-left: 20px;
+            &:before{
+                content: url(../img/mail.png);
+                position: absolute;
+                top: -3px;
+                right: 0;
+                left: -20px;
+                bottom: 0;
+            }
+        }
+        li {
+            text-align: left;
+            display: inline-block;
+            width: 40%;
+            a {
+                text-decoration: none;
+                color: $color-black;
+            }
+        }
+    }
+
+    
+    .button-div{
+        position: absolute;
+        right: 50px;
+        height: 30px;
+        width: 200px;
+    
+    }
+
+    button:last-child{
+        border-left: 1px solid $color-line;
+}
+    button{
+        background-color: transparent;
+        border-right: 1px solid $color-line;
+        height: 100%;
+        float: right;
+        padding: 0 7% 0 12%;
+        a{
+            text-decoration: none;
+            font-family: $poppins;
+            font-size: $font_s_9;
+            color: $color-black;
+        }
+        .login {
+            position: relative;
+            &:before{
+                content: url(../img/lock.png);
+                position: absolute;
+                top: -4px;
+                right: 0;
+                left: -67px;
+                bottom: 0;
+            }
+        }
+        .konto {
+            position: relative;
+            &:before{
+                content: url(../img/login.png);
+                position: absolute;
+                top: -6px;
+                right: 0;
+                left: -67px;
+                bottom: 0;
+            } 
+        }
+    }
+}
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+    
+    .logo {
+        padding-left: 70px;
+    }
+    .search {
+        width: 35%;
+        padding-top: 30px;
+        position: relative;
+        &__input {
+            border-bottom: 1px solid $color-black;
+            width: 100%;
+            font-family: $poppins;
+            color: $color-font-search;
+        }
+        &__btn {
+            position: absolute;
+            right: 0px;
+        }
+    }
+    .basket {
+        padding: 20px 110px 0px 0px;
+        &__span {
+            font-family: $poppins;
+            color: $color-black;
+            font-size: 10px;
+            position: relative;
+            &:before{
+                content: url(../img/basket.png);
+                position: absolute;
+                left: -40px;
+                top: -10px;
+            }
+            &:after{
+                content: counter(li);
+                position: absolute;
+                top: 15px;
+                left: -22px;
+                font-family: $poppins;
+                padding: 4px 6px;
+                background-color: $color-pink;
+                border-radius: 50%;
+                font-size: 9px;
+                color: $color_white;
+            }
+        }
+    }
+}
+.header3{
+    width: 100%;
+    height: 30px;  
+    margin-top: 60px;
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+        &__item {
+            a {
+                text-decoration: none;
+                font-family: $poppins;
+                color: $color-black;
+                &:hover {
+                    color: $color-pink;
+                }
+            }
+        }
+    }
+}
